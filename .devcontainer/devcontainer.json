@@ -1,0 +1,10 @@
+{
+  "name": "Ubuntu Server",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y nginx",
+  "forwardPorts": [80],
+  "remoteUser": "vscode"
+}
